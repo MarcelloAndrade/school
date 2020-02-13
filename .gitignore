@@ -1,1 +1,13 @@
 school-application/target/*
+.settings
+.classpath
+.project
+
+/school-application/.project
+/school-application/target
+*/school-application/target
+*/school-application/target/*
+
+target/*
+*/target
+*/target/*
