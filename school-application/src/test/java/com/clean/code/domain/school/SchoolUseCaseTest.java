@@ -1,6 +1,6 @@
 package com.clean.code.domain.school;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.when;
 
@@ -13,11 +13,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-import com.clean.code.domain.school.EnumLevel;
-import com.clean.code.domain.school.School;
-import com.clean.code.domain.school.SchoolProvider;
-import com.clean.code.domain.school.SchoolUseCase;
 
 @ExtendWith(MockitoExtension.class)
 class SchoolUseCaseTest {
@@ -50,7 +45,6 @@ class SchoolUseCaseTest {
 	void createSchool_Success() {
 		when(schoolProviderMock.findById(schoolId)).thenReturn(Optional.empty());
 		when(schoolProviderMock.add(school)).thenReturn(school);
-
-		assertThat(useCase.create(school)).isEqualTo(school);
+		assertEquals(useCase.create(school), school);
 	}
 }
