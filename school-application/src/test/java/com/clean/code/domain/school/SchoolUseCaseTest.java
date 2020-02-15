@@ -14,8 +14,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import com.clean.code.domain.school.School.EnumLevel;
-
 @ExtendWith(MockitoExtension.class)
 class SchoolUseCaseTest {
 

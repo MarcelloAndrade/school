@@ -1,17 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	
+		 
 	<modelVersion>4.0.0</modelVersion>
 	
 	<parent>
 		<groupId>com.clean.code</groupId>
 		<artifactId>school-master</artifactId>
-		<version>0.0.1-SNAPSHOT</version>		
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	
-	<artifactId>school-application</artifactId>
-	<name>school-application</name>
+	<artifactId>school-memory-persistence</artifactId>
+	<name>school-memory-persistence</name>
 	<packaging>jar</packaging>
 	
 	<properties>
@@ -23,6 +23,12 @@
 	</properties>
 	
 	<dependencies>
+	
+		<dependency>
+			<groupId>com.clean.code</groupId>
+			<artifactId>school-application</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -67,5 +73,6 @@
 			
 		</plugins>
 	</build>       
+	
 	
 </project>

@@ -18,6 +18,7 @@
 	
 	<modules>
 		<module>school-application</module>
+		<module>school-memory-persistence</module>
 	</modules>
 	
 </project>

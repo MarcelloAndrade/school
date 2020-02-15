@@ -8,8 +8,6 @@ public interface SchoolProvider {
 
 	School add(School school);
 
-	void delete(UUID schoolId);
-
 	Optional<School> findById(UUID schoolId);
 
 	List<School> findAll();
