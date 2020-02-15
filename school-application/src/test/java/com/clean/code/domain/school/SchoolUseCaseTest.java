@@ -14,6 +14,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import com.clean.code.domain.usecase.expection.BusinessException;
+
 @ExtendWith(MockitoExtension.class)
 class SchoolUseCaseTest {
 
@@ -38,7 +40,7 @@ class SchoolUseCaseTest {
 	@Test
 	void createSchoolExisting_ThrowsException() {
 		when(schoolProviderMock.findById(schoolId)).thenReturn(Optional.of(school));
-		assertThrows(IllegalArgumentException.class, () -> useCase.create(school));
+		assertThrows(BusinessException.class, () -> useCase.create(school));
 	}
 
 	@Test
