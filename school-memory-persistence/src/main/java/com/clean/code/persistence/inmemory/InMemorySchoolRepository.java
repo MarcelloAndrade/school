@@ -1,4 +1,4 @@
-package com.clean.code.persistence.inmemory.school;
+package com.clean.code.persistence.inmemory;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 
 import com.clean.code.domain.school.EnumLevel;
 import com.clean.code.domain.school.School;
+import com.clean.code.persistence.inmemory.InMemorySchoolRepository;
 
 class InMemorySchoolRepositoryTest {
 
