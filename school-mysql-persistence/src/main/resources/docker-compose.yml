@@ -1,6 +1,6 @@
 version: '3.3'
 services:
-  school-mysql:
+  mysql:
     image: mysql:5.7
     restart: always
     environment:
@@ -13,6 +13,6 @@ services:
     expose:
       - '3306'
     volumes:
-      - mysql-school:/var/lib/mysql
+      - mysql-school:/var/lib/mysql-school
 volumes:
   mysql-school:

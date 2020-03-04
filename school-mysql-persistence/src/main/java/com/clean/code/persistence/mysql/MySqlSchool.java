@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class MysqlSchool {
+public class MySqlSchool {
 
 	@Id
 	private UUID id;
@@ -29,8 +29,8 @@ public class MysqlSchool {
 	private List<EnumLevel> level;
 	
 
-	public MysqlSchool fromDomain(School school) {
-		return new MysqlSchool(school.getId(), school.getName(), school.getLevel());
+	public MySqlSchool fromDomain(School school) {
+		return new MySqlSchool(school.getId(), school.getName(), school.getLevel());
 	}
 
 	public School toDomain() {

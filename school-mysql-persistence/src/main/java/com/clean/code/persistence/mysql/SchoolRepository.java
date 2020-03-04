@@ -4,6 +4,6 @@ import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-interface SchoolRepository extends JpaRepository<MysqlSchool, UUID> {
+interface SchoolRepository extends JpaRepository<MySqlSchool, UUID> {
 
 }

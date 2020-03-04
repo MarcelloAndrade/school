@@ -19,17 +19,17 @@ public class SchoolRepositoryImpl implements SchoolProvider {
 
 	@Override
 	public School add(School school) {
-		repository.save(new MysqlSchool().fromDomain(school));
+		repository.save(new MySqlSchool().fromDomain(school));
 		return school;
 	}
 
 	@Override
 	public Optional<School> findById(UUID schoolId) {
-		return repository.findById(schoolId).map(MysqlSchool::toDomain);
+		return repository.findById(schoolId).map(MySqlSchool::toDomain);
 	}
 
 	@Override
 	public List<School> findAll() {
-		return repository.findAll().stream().map(MysqlSchool::toDomain).collect(Collectors.toList());
+		return repository.findAll().stream().map(MySqlSchool::toDomain).collect(Collectors.toList());
 	}
 }
