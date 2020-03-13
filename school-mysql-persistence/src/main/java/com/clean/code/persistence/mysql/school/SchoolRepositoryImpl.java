@@ -1,4 +1,4 @@
-package com.clean.code.persistence.mysql;
+package com.clean.code.persistence.mysql.school;
 
 import java.util.List;
 import java.util.Optional;
